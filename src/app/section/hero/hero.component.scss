@@ -22,6 +22,7 @@ $breakpoint-tablet: 1200px;
   }
 
   @media (max-width: $breakpoint-mobile) {
+    margin-bottom: 5rem;
     background-image: linear-gradient(transparent, black),url("../../../assets/images/decode1.png");
   }
 }
