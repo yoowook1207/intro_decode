@@ -1,0 +1,72 @@
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 1200px;
+
+.block-main {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-family: Pretendard;
+
+  @media (max-width: $breakpoint-tablet) {
+
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    height: 50vh;
+  }
+}
+
+.text-container {
+  width: 100%;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+
+  .topper {
+    color: #A8A8A8;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    font-weight: 600;
+  }
+
+  .input-text {
+    color: #252525;
+    text-align: center;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    .topper {
+      font-size: 24px;
+    }
+
+    .input-text {
+      font-size: 32px;
+    }
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    .topper {
+      font-size: 16px;
+    }
+
+    .input-text {
+      font-size: 24px;
+    }
+  }
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
