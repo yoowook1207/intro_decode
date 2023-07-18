@@ -1,7 +1,10 @@
 <div class="layout">
   <div class="main-container">
     <app-hero></app-hero>
-    <app-block *ngFor="let inputInfo of inputArray" [received]="inputInfo"></app-block>
+    <app-block [received]="secondBlockInfo"></app-block>
+    <app-block [received]="thirdBlockInfo"></app-block>
+    <app-mobile-block *ngFor="let info of inputArray" [blockInfo]="info"></app-mobile-block>
+    <app-block [received]="seventhBlockInfo"></app-block>
     <div class="button-container">
       <button onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSeThbWsjS6XEskyVvSxetaML-ka8eUo4xFO_n_Xv6Ekc13VFA/viewform'">Start your journey today!</button>
     </div>

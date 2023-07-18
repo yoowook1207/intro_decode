@@ -5,6 +5,7 @@ import { FlyerComponent } from './flyer/flyer.component';
 import { HeroComponent } from './section/hero/hero.component';
 import { BlockComponent } from './section/block/block.component';
 import {NgOptimizedImage} from "@angular/common";
+import { MobileBlockComponent } from './section/mobile-block/mobile-block.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import {NgOptimizedImage} from "@angular/common";
     FlyerComponent,
     HeroComponent,
     BlockComponent,
+    MobileBlockComponent,
   ],
   imports: [
     BrowserModule,

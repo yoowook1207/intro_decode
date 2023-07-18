@@ -11,6 +11,8 @@ export class BlockComponent {
     topper: string,
     inputText: string,
     inputImgName: string,
+    isVideo?: boolean,
+    isLast?:boolean
   }
   @Input() text!: string;
   @Input() imgName = ''

@@ -1,13 +1,15 @@
 $breakpoint-mobile: 480px;
 $breakpoint-tablet: 1200px;
-
+.gray {
+  background: #F6F6F6;
+}
 .block-main {
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-family: Pretendard;
+  font-family: Pretendard, serif;
 
   @media (max-width: $breakpoint-tablet) {
 
@@ -62,9 +64,8 @@ $breakpoint-tablet: 1200px;
 }
 
 .img-container {
-  width: 50%;
+  width: 100%;
   max-width: 100%;
-  padding: 5rem;
 
   img {
     width: 100%;

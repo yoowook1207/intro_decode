@@ -8,22 +8,19 @@ $breakpoint-tablet: 1200px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(transparent 50%, black),url("../../../assets/images/decode1.png");
-  background-size: contain;
+  background-image: linear-gradient(transparent 60%, black),url("../../../assets/images/img1.png");
+  background-size: cover;
   max-width: 1920px;
-  border-bottom: 5px solid white;
-  box-sizing: border-box;
   font-family: Pretendard, serif;
   color: #FFF;
-  margin-bottom: 20rem;
+  margin-bottom: 10rem;
 
   @media (max-width: $breakpoint-tablet) {
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
   }
 
   @media (max-width: $breakpoint-mobile) {
-    margin-bottom: 5rem;
-    background-image: linear-gradient(transparent, black),url("../../../assets/images/decode1.png");
+    margin-bottom: 2rem;
   }
 }
 
@@ -32,40 +29,41 @@ $breakpoint-tablet: 1200px;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  margin-top: 400px;
+  margin-top: 20rem;
 
   .topper {
     color: #A8A8A8;
     margin-bottom: 0;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 34px;
   }
 
   .header{
     width: 100%;
     text-align: center;
-    font-size: 64px;
+    font-size: 92px;
     font-style: normal;
     font-weight: 700;
     margin-bottom: 1rem;
   }
 
   @media (max-width: $breakpoint-tablet) {
-    margin-top: 100px;
+    margin-top: 10rem;
+    margin-bottom: 1rem;
 
     .topper {
-      font-size: 16px;
+      font-size: 24px;
     }
 
     .header {
-      font-size: 48px;
+      font-size: 64px;
       margin-bottom: 0.5rem;
     }
   }
 
   @media (max-width: $breakpoint-mobile) {
-
-    margin-top: 0;
+    margin-top: 5rem;
+    margin-bottom: 0;
 
     .topper {
       font-size: 12px;

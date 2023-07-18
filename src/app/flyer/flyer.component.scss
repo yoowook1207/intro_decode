@@ -80,4 +80,9 @@ $breakpoint-tablet: 1200px;
   border-top: 1px solid #4B4B4B;
   color: #4B4B4B;
   height: 50px;
+
+  @media (max-width: $breakpoint-mobile) {
+    margin: 0 2rem 0 2rem;
+    font-size: small;
+  }
 }

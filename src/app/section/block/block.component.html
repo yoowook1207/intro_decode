@@ -1,4 +1,4 @@
-<div class="block-main">
+<div class="block-main" [ngClass]="(received.isVideo||received.isLast) ? 'gray' : ''">
   <div class="text-container">
     <p class="topper">
       {{received.topper}}
@@ -7,7 +7,10 @@
       {{received.inputText}}
     </p>
   </div>
-  <div class="img-container">
+  <div *ngIf="received.isVideo" class ="video-container">
+    <video></video>
+  </div>
+  <div *ngIf="!received.isVideo" class="img-container">
     <img src='./assets/images/{{received.inputImgName}}'/>
   </div>
 </div>
