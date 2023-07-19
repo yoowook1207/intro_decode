@@ -8,7 +8,9 @@
     </p>
   </div>
   <div *ngIf="received.isVideo" class ="video-container">
-    <video src="./assets/images/{{received.inputImgName}}" [autoplay]="true" [loop]="true"></video>
+    <video [autoplay]="true" [loop]="true" [muted]="true">
+      <source src="./assets/images/{{received.inputImgName}}" type="video/mp4"/>
+    </video>
   </div>
   <div *ngIf="!received.isVideo" class="img-container">
     <img src='./assets/images/{{received.inputImgName}}'/>
