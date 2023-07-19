@@ -5,6 +5,7 @@ $breakpoint-tablet: 1200px;
 }
 .block-main {
   height: 100vh;
+  min-height: 1000px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -16,6 +17,7 @@ $breakpoint-tablet: 1200px;
   }
 
   @media (max-width: $breakpoint-mobile) {
+    min-height: 0;
     height: 50vh;
   }
 }
@@ -68,6 +70,19 @@ $breakpoint-tablet: 1200px;
   max-width: 100%;
 
   img {
+    width: 100%;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    width: 100%;
+  }
+}
+
+.video-container {
+  width: 100%;
+  max-width: 100%;
+
+  video {
     width: 100%;
   }
 

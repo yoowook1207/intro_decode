@@ -1,5 +1,4 @@
-import {Component, ElementRef, HostListener, OnInit, Renderer2, ViewChild} from '@angular/core';
-import { ViewportScroller } from '@angular/common';
+import {Component, OnInit, } from '@angular/core';
 
 @Component({
   selector: 'app-flyer',
@@ -16,7 +15,7 @@ export class FlyerComponent implements OnInit{
   thirdBlockInfo = {
     topper: '단 시간안에 창조하는 세상(or세계관)',
     inputText: 'Unlock the power of instant creation  ',
-    inputImgName: 'decode3.png',
+    inputImgName: '',
     isVideo: true
   }
 
@@ -44,7 +43,8 @@ export class FlyerComponent implements OnInit{
   seventhBlockInfo = {
     topper: 'Are you ready?',
     inputText: 'Experience transformative reading like never before.',
-    inputImgName: 'img6.png',
+    inputImgName: 'walking.mp4',
+    isVideo: true,
     isLast: true
   }
 
