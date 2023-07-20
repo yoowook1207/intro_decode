@@ -14,7 +14,7 @@ export class FlyerComponent implements OnInit{
 
   thirdBlockInfo = {
     topper: '단 시간안에 창조하는 세계관',
-    inputText: 'Unlock the power of instant creation  ',
+    inputText: 'Unlock the power of instant creation.',
     inputImgName: 'book2.mp4',
     isVideo: true
   }
