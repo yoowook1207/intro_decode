@@ -9,7 +9,7 @@ export class FlyerComponent implements OnInit{
   secondBlockInfo = {
     topper: '혁신적인 영어교육',
     inputText: 'Welcome to a new era of AI education.',
-    inputImgName: 'education.mp4',
+    inputImgName: 'AIeducation.mp4',
     isVideo:true
   }
 
