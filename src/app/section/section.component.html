@@ -1,0 +1,15 @@
+<div class="block-main" [ngClass]="(received.isGray) ? 'gray' : ''">
+  <div class="text-container">
+    <p class="topper">
+      {{received.topper}}
+    </p>
+    <p class="input-text">
+      {{received.inputText}}
+    </p>
+  </div>
+  <div class ="video-container">
+    <video [autoplay]="true" [loop]="true" [muted]="true" playsinline>
+      <source src="./assets/video/landing/{{received.inputImgName}}" type="video/mp4"/>
+    </video>
+  </div>
+</div>

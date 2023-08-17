@@ -1,13 +1,23 @@
 <div class="layout">
   <div class="main-container">
-    <app-hero></app-hero>
-    <app-block [received]="secondBlockInfo"></app-block>
-    <app-block [received]="thirdBlockInfo"></app-block>
-    <app-mobile-block *ngFor="let info of inputArray" [blockInfo]="info"></app-mobile-block>
-    <app-block [received]="seventhBlockInfo"></app-block>
+    <div class="hero-main">
+      <div class="hero-container">
+        <p class="topper">Introducing</p>
+        <div class="header">
+          Decode
+        </div>
+        <div class="hero-btn-container">
+          <p>Ready to read? Scroll down for more info</p>
+          <button onclick="location.href='https://forms.gle/Hx2YaLyxeNQg5bGD7'">
+            Join Beta
+          </button>
+        </div>
+      </div>
+    </div>
+    <app-section *ngFor="let blockInfo of blockInfoArray" [received]="blockInfo"></app-section>
     <div class="button-container">
-      <button onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSeThbWsjS6XEskyVvSxetaML-ka8eUo4xFO_n_Xv6Ekc13VFA/viewform'">
-        <span>Start your journey today!</span>
+      <button onclick="location.href='https://forms.gle/Hx2YaLyxeNQg5bGD7'">
+        <span>Register your journey today!</span>
       </button>
     </div>
     <div class="footer">
